@@ -1,0 +1,54 @@
+<!-- <app-login></app-login> -->
+<div class="createCommunity mt-5" id="createCommunity">
+
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card shadow text-dark mt-4">
+                <div class="card-header">
+                    <h4 class="text text-center">Create Community</h4>
+                </div>
+                <!-- BIND THE FORM TO bookingForm instance and invoke bookTicket() method on form submission -->
+                <form>
+                    <div class="card-body">
+                        <!-- 
+                        Create input fields with appropriate labels and form controls and 
+                        render the error messages for incorrect input only if the field is dirty and has invalid data
+                      -->
+
+                        <div class="form-group">
+                            <!-- FORM CONTROL ==> customerName -->
+                            <label for="communityName">Community Name</label>
+                            <input type="text" class="form-control" id="communityName">
+
+                            <div id="createCommunityError">
+                                <!-- Message for required error ==> 'Field Required' -->
+                                <!-- Message for pattern error ==> 'Name can have only alphabets and white space' -->
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- FORM CONTROL ==> customerName -->
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" class="form-control mt-3"></textarea>
+                            <div id="descriptionError">
+                                <!-- Message for required error ==> 'Field Required' -->
+                                <!-- Message for pattern error ==> 'Name can have only alphabets and white space' -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <div class="form-group">
+                            <!-- button should be disabled till bookingForm becomes valid -->
+                            <button class="form-control  btn btn-outline-primary mt-3" id="login">Create Community</button>
+                        </div>
+                        
+                    </div>
+                    <!-- <div *ngIf="successMessage" class="text text-success" id="successMessage"> -->
+                    <!-- SUCCESS MESSAGE COMES HERE -->
+                    <!-- </div> -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

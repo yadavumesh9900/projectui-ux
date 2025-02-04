@@ -1,0 +1,35 @@
+/* 
+.navbarCon{
+   
+    background-image: url('../../assets/pexels-shkrabaanthony-5816299.jpg') !important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+ .commintyDetails{
+    display: flex;
+    justify-content: end;
+ }
+.commintyDetails ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0px !important;
+    gap: 2rem;
+}
+.commintyDetails ul li{
+    cursor: pointer;
+}
+/* .commintyDetails{
+    display: flex; 
+     justify-content:end;
+} */
+.navDetails{
+    display: flex;
+    justify-content: space-between !important;
+}
+.nacContentContainer{
+    display: block;
+}
